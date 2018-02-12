@@ -1,0 +1,36 @@
+<div>
+  <div class="row">
+    <div class="col align-self-center" v-show="startButtonShow">
+      <button class="btn btn-primary" @click="createGame">Start Game</button>
+    </div>
+  </div>
+  <div class="row" v-if="startGame">
+    <div class="col-6 text-left">
+      <vue-countdown v-on:time-expire="handleTimeExpire" :seconds="60" :start="timer" :units="['minutes', 'seconds']"></vue-countdown>
+    </div>
+    <div class="col-6 text-right">
+      <button class="btn btn-success" @click="restartGame">Restart</button>
+    </div>
+  </div>
+  <div class="row" v-if="startGame">
+    <div class="col-12 text-center">
+      <table id="board" class="mx-auto">
+        <tr>
+          <td data-id="1" @click="chooseItem($event)" class="icons"></td>
+          <td data-id="2" @click="chooseItem($event)" class="icons"></td>
+          <td data-id="3" @click="chooseItem($event)" class="icons"></td>
+        </tr>
+        <tr>
+          <td data-id="4" @click="chooseItem($event)" class="icons"></td>
+          <td data-id="5" @click="chooseItem($event)" class="icons"></td>
+          <td data-id="6" @click="chooseItem($event)" class="icons"></td>
+        </tr>
+        <tr>
+          <td data-id="7" @click="chooseItem($event)" class="icons"></td>
+          <td data-id="8" @click="chooseItem($event)" class="icons"></td>
+          <td data-id="9" @click="chooseItem($event)" class="icons"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

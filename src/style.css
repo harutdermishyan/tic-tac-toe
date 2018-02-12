@@ -1,0 +1,45 @@
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+}
+
+table {
+    text-align: center;
+    width: 50%;
+    border-collapse: collapse;
+}
+td {
+    width: 33.333%;
+    height: 150px;
+    border: 6px solid #222;
+    cursor: pointer;
+}
+
+td:nth-of-type(2) {
+    border-top-color: transparent;
+}
+td:nth-of-type(3) {
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+tr:nth-of-type(3) td {
+    border-bottom-color: transparent;
+}
+td:first-of-type {
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+td:nth-of-type(2) {
+    border-top-color: transparent;
+}
+td:nth-of-type(3) {
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+tr:nth-of-type(3) td {
+    border-bottom-color: transparent;
+}
