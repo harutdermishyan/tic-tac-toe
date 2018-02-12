@@ -1,6 +1,4 @@
-# tic-tac
-
-> ]
+# Tic Tac Toe Game
 
 ## Build Setup
 
